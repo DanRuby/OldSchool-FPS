@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.Events;
 
 /// <summary>
-/// Класс объекта, с которым игрок может взаимодействовать
+/// РљР»Р°СЃСЃ РѕР±СЉРµРєС‚Р°, СЃ РєРѕС‚РѕСЂС‹Рј РёРіСЂРѕРє РјРѕР¶РµС‚ РІР·Р°РёРјРѕРґРµР№СЃС‚РІРѕРІР°С‚СЊ
 /// </summary>
 [RequireComponent(typeof(BoxCollider))]
 public class Interactable : MonoBehaviour
 {
-    [SerializeField,Tooltip("Событие вызывается при успещном взаимодействии")]
+    [SerializeField,Tooltip("РЎРѕР±С‹С‚РёРµ РІС‹Р·С‹РІР°РµС‚СЃСЏ РїСЂРё СѓСЃРїРµС‰РЅРѕРј РІР·Р°РёРјРѕРґРµР№СЃС‚РІРёРё")]
     private UnityEvent OnActivated;
 
     [SerializeField]

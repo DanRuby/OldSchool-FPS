@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Класс передвигаемого в необходимом направлении объекта 
+/// РљР»Р°СЃСЃ РїРµСЂРµРґРІРёРіР°РµРјРѕРіРѕ РІ РЅРµРѕР±С…РѕРґРёРјРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё РѕР±СЉРµРєС‚Р° 
 /// </summary>
 public class MovingObject : MonoBehaviour
 {

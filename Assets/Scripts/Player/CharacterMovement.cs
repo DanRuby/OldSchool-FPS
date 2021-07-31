@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Класс передвижения игрока
+/// РљР»Р°СЃСЃ РїРµСЂРµРґРІРёР¶РµРЅРёСЏ РёРіСЂРѕРєР°
 /// </summary>
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(PlayerInputs))]
@@ -93,19 +93,19 @@ public class CharacterMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Проверка положения игрока в воздухе или на земле
+    /// РџСЂРѕРІРµСЂРєР° РїРѕР»РѕР¶РµРЅРёСЏ РёРіСЂРѕРєР° РІ РІРѕР·РґСѓС…Рµ РёР»Рё РЅР° Р·РµРјР»Рµ
     /// </summary>
     private void CheckGrounded()
     {
-        //Выбрать дистанцию для проверки в зависимотси от предыдущего положения персонажа
+        //Р’С‹Р±СЂР°С‚СЊ РґРёСЃС‚Р°РЅС†РёСЋ РґР»СЏ РїСЂРѕРІРµСЂРєРё РІ Р·Р°РІРёСЃРёРјРѕС‚СЃРё РѕС‚ РїСЂРµРґС‹РґСѓС‰РµРіРѕ РїРѕР»РѕР¶РµРЅРёСЏ РїРµСЂСЃРѕРЅР°Р¶Р°
         float chosenGroundCheckDistance = isGrounded ? character.skinWidth + GROUNDED_RAY : character.skinWidth + AIR_RAY;
 
         isGrounded = false;
         if (Physics.CapsuleCast(GetCapsuleBottomHemisphere(), GetCapsuleTopHemishepre(),
                     character.radius, Vector3.down, out RaycastHit hit, chosenGroundCheckDistance, groundLayer))
         {
-            //Считаем, что это земля под нами действительно является землей только если ее нормаль направлена в том же направлении что и вектор вверх игрока
-            //и угол поверхности меньше либо равен установленному в контроллере
+            //РЎС‡РёС‚Р°РµРј, С‡С‚Рѕ СЌС‚Рѕ Р·РµРјР»СЏ РїРѕРґ РЅР°РјРё РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЏРІР»СЏРµС‚СЃСЏ Р·РµРјР»РµР№ С‚РѕР»СЊРєРѕ РµСЃР»Рё РµРµ РЅРѕСЂРјР°Р»СЊ РЅР°РїСЂР°РІР»РµРЅР° РІ С‚РѕРј Р¶Рµ РЅР°РїСЂР°РІР»РµРЅРёРё С‡С‚Рѕ Рё РІРµРєС‚РѕСЂ РІРІРµСЂС… РёРіСЂРѕРєР°
+            //Рё СѓРіРѕР» РїРѕРІРµСЂС…РЅРѕСЃС‚Рё РјРµРЅСЊС€Рµ Р»РёР±Рѕ СЂР°РІРµРЅ СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅРѕРјСѓ РІ РєРѕРЅС‚СЂРѕР»Р»РµСЂРµ
             if (Vector3.Dot(hit.normal, transform.up) > 0f &&
                 IsNormalUnderSlopeLimit(hit.normal))
             {
@@ -121,7 +121,7 @@ public class CharacterMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Получить положение центра нижней сферы капсулы
+    /// РџРѕР»СѓС‡РёС‚СЊ РїРѕР»РѕР¶РµРЅРёРµ С†РµРЅС‚СЂР° РЅРёР¶РЅРµР№ СЃС„РµСЂС‹ РєР°РїСЃСѓР»С‹
     /// </summary>
     /// <returns></returns>
     private Vector3 GetCapsuleBottomHemisphere()
@@ -130,7 +130,7 @@ public class CharacterMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Получить положение центра верхней сферы капсулы
+    /// РџРѕР»СѓС‡РёС‚СЊ РїРѕР»РѕР¶РµРЅРёРµ С†РµРЅС‚СЂР° РІРµСЂС…РЅРµР№ СЃС„РµСЂС‹ РєР°РїСЃСѓР»С‹
     /// </summary>
     /// <returns></returns>
     private Vector3 GetCapsuleTopHemishepre()
@@ -139,9 +139,9 @@ public class CharacterMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Попадает ли поверхность под предел слоупа для поднятия
+    /// РџРѕРїР°РґР°РµС‚ Р»Рё РїРѕРІРµСЂС…РЅРѕСЃС‚СЊ РїРѕРґ РїСЂРµРґРµР» СЃР»РѕСѓРїР° РґР»СЏ РїРѕРґРЅСЏС‚РёСЏ
     /// </summary>
-    /// <param name="normal">Нормаль поверхности</param>
+    /// <param name="normal">РќРѕСЂРјР°Р»СЊ РїРѕРІРµСЂС…РЅРѕСЃС‚Рё</param>
     /// <returns></returns>
     private bool IsNormalUnderSlopeLimit(Vector3 normal)
     {
@@ -149,7 +149,7 @@ public class CharacterMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Поворот игрока при перемещении мыши
+    /// РџРѕРІРѕСЂРѕС‚ РёРіСЂРѕРєР° РїСЂРё РїРµСЂРµРјРµС‰РµРЅРёРё РјС‹С€Рё
     /// </summary>
     private void Rotate()
     {
@@ -159,7 +159,7 @@ public class CharacterMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Хендлинг прыжка
+    /// РҐРµРЅРґР»РёРЅРі РїСЂС‹Р¶РєР°
     /// </summary>
     /// <returns></returns>
     private void HandleGravityAndJump()
@@ -175,7 +175,7 @@ public class CharacterMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Функция перемещения
+    /// Р¤СѓРЅРєС†РёСЏ РїРµСЂРµРјРµС‰РµРЅРёСЏ
     /// </summary>
     private void Move()
     {
@@ -190,15 +190,15 @@ public class CharacterMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Логика учета препятствий на пути игрока
+    /// Р›РѕРіРёРєР° СѓС‡РµС‚Р° РїСЂРµРїСЏС‚СЃС‚РІРёР№ РЅР° РїСѓС‚Рё РёРіСЂРѕРєР°
     /// </summary>
     private void HandleMovementObstructions()
     {
-        //Каст капсулы в сторону движения игрока
+        //РљР°СЃС‚ РєР°РїСЃСѓР»С‹ РІ СЃС‚РѕСЂРѕРЅСѓ РґРІРёР¶РµРЅРёСЏ РёРіСЂРѕРєР°
         if (Physics.CapsuleCast(GetCapsuleBottomHemisphere(), GetCapsuleTopHemishepre(), character.radius, (currentHorizontalVelocity + verticalVelocity).normalized,
             out RaycastHit hit, (currentHorizontalVelocity + verticalVelocity).magnitude * Time.deltaTime, obstructionMask))
         {
-            //Проецируем скорости на поверхность в которую врезались
+            //РџСЂРѕРµС†РёСЂСѓРµРј СЃРєРѕСЂРѕСЃС‚Рё РЅР° РїРѕРІРµСЂС…РЅРѕСЃС‚СЊ РІ РєРѕС‚РѕСЂСѓСЋ РІСЂРµР·Р°Р»РёСЃСЊ
             currentHorizontalVelocity = Vector3.ProjectOnPlane(currentHorizontalVelocity, hit.normal);
             currentHorizontalVelocity.y = 0;
 
@@ -211,12 +211,12 @@ public class CharacterMovement : MonoBehaviour
     #region quakelike acceleration
 
     /// <summary>
-    /// Вычисление ускорения
+    /// Р’С‹С‡РёСЃР»РµРЅРёРµ СѓСЃРєРѕСЂРµРЅРёСЏ
     /// </summary>
-    /// <param name="accelDir">Нормализованное направление, в котором игрок хочет двигаться</param>
-    /// <param name="prevVelocity">Ускорение до добавления текущего (ускорение прошлого фрейма)</param>
-    /// <param name="accelerate">Ускорение игрока за фрейм</param>
-    /// <param name="maxVelocity">Максимальная скорость игрока</param>
+    /// <param name="accelDir">РќРѕСЂРјР°Р»РёР·РѕРІР°РЅРЅРѕРµ РЅР°РїСЂР°РІР»РµРЅРёРµ, РІ РєРѕС‚РѕСЂРѕРј РёРіСЂРѕРє С…РѕС‡РµС‚ РґРІРёРіР°С‚СЊСЃСЏ</param>
+    /// <param name="prevVelocity">РЈСЃРєРѕСЂРµРЅРёРµ РґРѕ РґРѕР±Р°РІР»РµРЅРёСЏ С‚РµРєСѓС‰РµРіРѕ (СѓСЃРєРѕСЂРµРЅРёРµ РїСЂРѕС€Р»РѕРіРѕ С„СЂРµР№РјР°)</param>
+    /// <param name="accelerate">РЈСЃРєРѕСЂРµРЅРёРµ РёРіСЂРѕРєР° Р·Р° С„СЂРµР№Рј</param>
+    /// <param name="maxVelocity">РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ РёРіСЂРѕРєР°</param>
     /// <returns></returns>
     private Vector3 Accelerate(Vector3 accelDir, Vector3 prevVelocity, float accelerate, float maxVelocity)
     {
@@ -231,25 +231,25 @@ public class CharacterMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Перемещение по земле
+    /// РџРµСЂРµРјРµС‰РµРЅРёРµ РїРѕ Р·РµРјР»Рµ
     /// </summary>
     /// <param name="accelDir"></param>
     /// <param name="prevVelocity"></param>
     /// <returns></returns>
     private Vector3 MoveGround(Vector3 accelDir, Vector3 prevVelocity)
     {
-        // Учет сопротивления земли
+        // РЈС‡РµС‚ СЃРѕРїСЂРѕС‚РёРІР»РµРЅРёСЏ Р·РµРјР»Рё
         float speed = prevVelocity.magnitude;
-        if (speed != 0) // Избежаение деления на 0
+        if (speed != 0) // РР·Р±РµР¶Р°РµРЅРёРµ РґРµР»РµРЅРёСЏ РЅР° 0
         {
             float drop = speed * friction * Time.fixedDeltaTime;
-            prevVelocity *= Mathf.Max(speed - drop, 0) / speed; // Скалирование ускорения на основе сопротивления
+            prevVelocity *= Mathf.Max(speed - drop, 0) / speed; // РЎРєР°Р»РёСЂРѕРІР°РЅРёРµ СѓСЃРєРѕСЂРµРЅРёСЏ РЅР° РѕСЃРЅРѕРІРµ СЃРѕРїСЂРѕС‚РёРІР»РµРЅРёСЏ
         }
         return Accelerate(accelDir, prevVelocity, groundAccel, maxGroundVel);
     }
 
     /// <summary>
-    /// Перемещение по воздуху
+    /// РџРµСЂРµРјРµС‰РµРЅРёРµ РїРѕ РІРѕР·РґСѓС…Сѓ
     /// </summary>
     /// <param name="accelDir"></param>
     /// <param name="prevVelocity"></param>

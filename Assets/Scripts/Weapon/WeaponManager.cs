@@ -5,7 +5,7 @@ using UnityEngine;
 public enum WeaponType { Pistol,Shotgun,Rifle,RocketLauncher,Laser,Sniper}
 
 /// <summary>
-/// Менеджер оружий игрока
+/// РњРµРЅРµРґР¶РµСЂ РѕСЂСѓР¶РёР№ РёРіСЂРѕРєР°
 /// </summary>
 public class WeaponManager : MonoBehaviour
 {
@@ -61,7 +61,7 @@ public class WeaponManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Выбрать следующее активированное оружие
+    /// Р’С‹Р±СЂР°С‚СЊ СЃР»РµРґСѓСЋС‰РµРµ Р°РєС‚РёРІРёСЂРѕРІР°РЅРЅРѕРµ РѕСЂСѓР¶РёРµ
     /// </summary>
     /// <param name="search"></param>
     private void PickNextAvailableWeapon(System.Func<int,int,int> search)
@@ -81,7 +81,7 @@ public class WeaponManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Установить состояние оружию
+    /// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ СЃРѕСЃС‚РѕСЏРЅРёРµ РѕСЂСѓР¶РёСЋ
     /// </summary>
     /// <param name="weapon"></param>
     /// <param name="state"></param>
@@ -92,10 +92,10 @@ public class WeaponManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Установить новое активное оружие
+    /// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РЅРѕРІРѕРµ Р°РєС‚РёРІРЅРѕРµ РѕСЂСѓР¶РёРµ
     /// </summary>
-    /// <param name="newWeapon">Новое оружие</param>
-    /// <param name="index">Индекс оружия в массиве</param>
+    /// <param name="newWeapon">РќРѕРІРѕРµ РѕСЂСѓР¶РёРµ</param>
+    /// <param name="index">РРЅРґРµРєСЃ РѕСЂСѓР¶РёСЏ РІ РјР°СЃСЃРёРІРµ</param>
     private void SetNewActiveWeapon(WeaponBase newWeapon,int index)
     {
         activeWeaponIndex = index;
@@ -110,7 +110,7 @@ public class WeaponManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Реакция на пикап оружия
+    /// Р РµР°РєС†РёСЏ РЅР° РїРёРєР°Рї РѕСЂСѓР¶РёСЏ
     /// </summary>
     /// <param name="id"></param>
     public void PickUpWeapon(WeaponType id)

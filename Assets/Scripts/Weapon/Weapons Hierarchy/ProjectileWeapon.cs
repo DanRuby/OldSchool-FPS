@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Оружие, которое при стрельбе создает проджектайл
+/// РћСЂСѓР¶РёРµ, РєРѕС‚РѕСЂРѕРµ РїСЂРё СЃС‚СЂРµР»СЊР±Рµ СЃРѕР·РґР°РµС‚ РїСЂРѕРґР¶РµРєС‚Р°Р№Р»
 /// </summary>
 public class ProjectileWeapon : WeaponBase
 {

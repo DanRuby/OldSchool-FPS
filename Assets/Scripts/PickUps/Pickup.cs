@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Базовый класс для пикапов
-/// Крутит и двигает пикапы
+/// Р‘Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ РґР»СЏ РїРёРєР°РїРѕРІ
+/// РљСЂСѓС‚РёС‚ Рё РґРІРёРіР°РµС‚ РїРёРєР°РїС‹
 /// </summary>
 [RequireComponent(typeof(BoxCollider))]
 public class Pickup : MonoBehaviour

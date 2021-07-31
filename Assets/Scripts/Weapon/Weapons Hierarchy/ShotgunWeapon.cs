@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Класс дробовика (несколько рейкастов для эмитации дроби)
+/// РљР»Р°СЃСЃ РґСЂРѕР±РѕРІРёРєР° (РЅРµСЃРєРѕР»СЊРєРѕ СЂРµР№РєР°СЃС‚РѕРІ РґР»СЏ СЌРјРёС‚Р°С†РёРё РґСЂРѕР±Рё)
 /// </summary>
 public class ShotgunWeapon : WeaponBase
 {

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 /// <summary>
-/// Триггер секрета
+/// РўСЂРёРіРіРµСЂ СЃРµРєСЂРµС‚Р°
 /// </summary>
 [RequireComponent(typeof(BoxCollider))]
 public class SecretTrigger : MonoBehaviour

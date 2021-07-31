@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 
 /// <summary>
-/// Класс, выводящий информацию о игроке
+/// РљР»Р°СЃСЃ, РІС‹РІРѕРґСЏС‰РёР№ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ РёРіСЂРѕРєРµ
 /// </summary>
 public class PlayerInfo : MonoBehaviour
 {

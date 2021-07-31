@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 
 /// <summary>
-/// Класс, выводящий информацию о текущем оружии
+/// РљР»Р°СЃСЃ, РІС‹РІРѕРґСЏС‰РёР№ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ С‚РµРєСѓС‰РµРј РѕСЂСѓР¶РёРё
 /// </summary>
 public class WeaponsInfo : MonoBehaviour
 {

@@ -5,7 +5,7 @@ using UnityEngine;
 public enum Keys { Red, Blue, Yellow, None }
 
 /// <summary>
-/// Класс, хранящий собранные ключи игроком
+/// РљР»Р°СЃСЃ, С…СЂР°РЅСЏС‰РёР№ СЃРѕР±СЂР°РЅРЅС‹Рµ РєР»СЋС‡Рё РёРіСЂРѕРєРѕРј
 /// </summary>
 public class KeysCollector : MonoBehaviour
 {

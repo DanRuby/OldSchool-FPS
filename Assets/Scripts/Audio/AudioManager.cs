@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Класс для проигрывания звуков по умолчанию или любого другого
+/// РљР»Р°СЃСЃ РґР»СЏ РїСЂРѕРёРіСЂС‹РІР°РЅРёСЏ Р·РІСѓРєРѕРІ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РёР»Рё Р»СЋР±РѕРіРѕ РґСЂСѓРіРѕРіРѕ
 /// </summary>
 [RequireComponent(typeof(AudioSource))] 
 public class AudioManager : MonoBehaviour
@@ -39,7 +39,7 @@ public class AudioManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Проиграть клип один раз
+    /// РџСЂРѕРёРіСЂР°С‚СЊ РєР»РёРї РѕРґРёРЅ СЂР°Р·
     /// </summary>
     /// <param name="clip"></param>
     public static void PlayOneShot(AudioClip clip)
@@ -49,7 +49,7 @@ public class AudioManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Проиграть звук поднятия оружия
+    /// РџСЂРѕРёРіСЂР°С‚СЊ Р·РІСѓРє РїРѕРґРЅСЏС‚РёСЏ РѕСЂСѓР¶РёСЏ
     /// </summary>
     private void PlayWeaponPickupSound(WeaponType weapon)
     { 

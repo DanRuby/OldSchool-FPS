@@ -10,7 +10,7 @@ public enum State
 }
 
 /// <summary>
-/// Класс врага, создающего проджектайл при атаке 
+/// РљР»Р°СЃСЃ РІСЂР°РіР°, СЃРѕР·РґР°СЋС‰РµРіРѕ РїСЂРѕРґР¶РµРєС‚Р°Р№Р» РїСЂРё Р°С‚Р°РєРµ 
 /// </summary>
 public class ShootingEnemy : MonoBehaviour,IDamagable
 {
@@ -82,7 +82,7 @@ public class ShootingEnemy : MonoBehaviour,IDamagable
     }
 
     /// <summary>
-    /// Цикл ИИ
+    /// Р¦РёРєР» РР
     /// </summary>
     /// <returns></returns>
     private IEnumerator UpdateRoutine()
@@ -145,7 +145,7 @@ public class ShootingEnemy : MonoBehaviour,IDamagable
     /// <summary>
     /// 
     /// </summary>
-    /// <returns>Правда, если цель находится в поле зрения и перед ней нет преграды</returns>
+    /// <returns>РџСЂР°РІРґР°, РµСЃР»Рё С†РµР»СЊ РЅР°С…РѕРґРёС‚СЃСЏ РІ РїРѕР»Рµ Р·СЂРµРЅРёСЏ Рё РїРµСЂРµРґ РЅРµР№ РЅРµС‚ РїСЂРµРіСЂР°РґС‹</returns>
     private bool TargetIsSeen()
     {
         if(TargetInLOS())
@@ -157,7 +157,7 @@ public class ShootingEnemy : MonoBehaviour,IDamagable
     }
 
     /// <summary>
-    /// Добавляет кд следующей атаке (заглушка анимации)
+    /// Р”РѕР±Р°РІР»СЏРµС‚ РєРґ СЃР»РµРґСѓСЋС‰РµР№ Р°С‚Р°РєРµ (Р·Р°РіР»СѓС€РєР° Р°РЅРёРјР°С†РёРё)
     /// </summary>
     /// <returns></returns>
     private IEnumerator AttackCooldown()

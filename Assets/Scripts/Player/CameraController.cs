@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Класс для управления фпс камеры (ротация вокруг оси x)
+/// РљР»Р°СЃСЃ РґР»СЏ СѓРїСЂР°РІР»РµРЅРёСЏ С„РїСЃ РєР°РјРµСЂС‹ (СЂРѕС‚Р°С†РёСЏ РІРѕРєСЂСѓРі РѕСЃРё x)
 /// </summary>
 public class CameraController : MonoBehaviour
 {

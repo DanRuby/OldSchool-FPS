@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Пул игровых объектов
+/// РџСѓР» РёРіСЂРѕРІС‹С… РѕР±СЉРµРєС‚РѕРІ
 /// </summary>
 /// <typeparam name="T"></typeparam>
 public class GenericPool<T> where T : MonoBehaviour
@@ -22,7 +22,7 @@ public class GenericPool<T> where T : MonoBehaviour
     }
 
     /// <summary>
-    /// Получить не активный объект 
+    /// РџРѕР»СѓС‡РёС‚СЊ РЅРµ Р°РєС‚РёРІРЅС‹Р№ РѕР±СЉРµРєС‚ 
     /// </summary>
     /// <returns></returns>
     public T GetObject()
@@ -41,7 +41,7 @@ public class GenericPool<T> where T : MonoBehaviour
     }
 
     /// <summary>
-    /// Возвращает объект и отключает его
+    /// Р’РѕР·РІСЂР°С‰Р°РµС‚ РѕР±СЉРµРєС‚ Рё РѕС‚РєР»СЋС‡Р°РµС‚ РµРіРѕ
     /// </summary>
     /// <param name="returnedObject"></param>
     public void ReturnObject(T returnedObject)

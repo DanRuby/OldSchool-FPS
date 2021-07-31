@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Класс для создания партиклей по умолчанию или любых других
+/// РљР»Р°СЃСЃ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РїР°СЂС‚РёРєР»РµР№ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РёР»Рё Р»СЋР±С‹С… РґСЂСѓРіРёС…
 /// </summary>
 public class ParticlesManager : MonoBehaviour
 {

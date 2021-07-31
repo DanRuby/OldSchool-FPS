@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Класс инпутов для передвижения от игрока
+/// РљР»Р°СЃСЃ РёРЅРїСѓС‚РѕРІ РґР»СЏ РїРµСЂРµРґРІРёР¶РµРЅРёСЏ РѕС‚ РёРіСЂРѕРєР°
 /// </summary>
 public class PlayerInputs : MonoBehaviour
 {

@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Базовый класс для поджектайла оружия и врагов
+/// Р‘Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ РґР»СЏ РїРѕРґР¶РµРєС‚Р°Р№Р»Р° РѕСЂСѓР¶РёСЏ Рё РІСЂР°РіРѕРІ
 /// </summary>
 [RequireComponent(typeof(Rigidbody))]
 public class Projectile : MonoBehaviour
 {
-    [Header("Эффекты")]
+    [Header("Р­С„С„РµРєС‚С‹")]
     [SerializeField]
     private ParticleSystem onHitParticle;
 
     [SerializeField]
     private AudioClip onHitSound;
     
-    [Header("Взрыв")]
-    [SerializeField, Tooltip("Если не нужен эффект взрыва, то радиус должен быть меньше либо равен 0")]
+    [Header("Р’Р·СЂС‹РІ")]
+    [SerializeField, Tooltip("Р•СЃР»Рё РЅРµ РЅСѓР¶РµРЅ СЌС„С„РµРєС‚ РІР·СЂС‹РІР°, С‚Рѕ СЂР°РґРёСѓСЃ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РјРµРЅСЊС€Рµ Р»РёР±Рѕ СЂР°РІРµРЅ 0")]
     private float explosionRadius;
 
     [SerializeField]
@@ -28,7 +28,7 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     private float damage;
     
-    [Header("Остальное")]
+    [Header("РћСЃС‚Р°Р»СЊРЅРѕРµ")]
     [SerializeField]
     private float initialImpulse;
     
@@ -75,7 +75,7 @@ public class Projectile : MonoBehaviour
     }
 
     /// <summary>
-    /// Проиграть нужные эффекты, обнулить ригидбоди, вернуть объект в пул
+    /// РџСЂРѕРёРіСЂР°С‚СЊ РЅСѓР¶РЅС‹Рµ СЌС„С„РµРєС‚С‹, РѕР±РЅСѓР»РёС‚СЊ СЂРёРіРёРґР±РѕРґРё, РІРµСЂРЅСѓС‚СЊ РѕР±СЉРµРєС‚ РІ РїСѓР»
     /// </summary>
     private void Despawn()
     {
@@ -92,7 +92,7 @@ public class Projectile : MonoBehaviour
     }
 
     /// <summary>
-    /// Установаить новую позицию, ротацию и активировать объект
+    /// РЈСЃС‚Р°РЅРѕРІР°РёС‚СЊ РЅРѕРІСѓСЋ РїРѕР·РёС†РёСЋ, СЂРѕС‚Р°С†РёСЋ Рё Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РѕР±СЉРµРєС‚
     /// </summary>
     /// <param name="pos"></param>
     /// <param name="rotation"></param>

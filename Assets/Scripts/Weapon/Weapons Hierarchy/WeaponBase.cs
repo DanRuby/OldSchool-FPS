@@ -8,7 +8,7 @@ public enum AmmoType
 }
 
 /// <summary>
-/// Структура для передачи информации о событии, связанном с оружием
+/// РЎС‚СЂСѓРєС‚СѓСЂР° РґР»СЏ РїРµСЂРµРґР°С‡Рё РёРЅС„РѕСЂРјР°С†РёРё Рѕ СЃРѕР±С‹С‚РёРё, СЃРІСЏР·Р°РЅРЅРѕРј СЃ РѕСЂСѓР¶РёРµРј
 /// </summary>
 public readonly struct WeaponEventParams
 {
@@ -24,11 +24,11 @@ public readonly struct WeaponEventParams
 
 
 /// <summary>
-/// Базовый класс оружия. Реализует оружие, действующее путем каста луча.
+/// Р‘Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ РѕСЂСѓР¶РёСЏ. Р РµР°Р»РёР·СѓРµС‚ РѕСЂСѓР¶РёРµ, РґРµР№СЃС‚РІСѓСЋС‰РµРµ РїСѓС‚РµРј РєР°СЃС‚Р° Р»СѓС‡Р°.
 /// </summary>
 public class WeaponBase : MonoBehaviour
 {
-    [Header("Звуки, партикли и эффекты")]
+    [Header("Р—РІСѓРєРё, РїР°СЂС‚РёРєР»Рё Рё СЌС„С„РµРєС‚С‹")]
     [SerializeField]
     private AudioClip gunSound;
 
@@ -36,7 +36,7 @@ public class WeaponBase : MonoBehaviour
     private ParticleSystem muzzleParticle;
 
     [Space(4)]
-    [Header("Характеристики")]
+    [Header("РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё")]
     [SerializeField]
     private AmmoType ammoType;
 

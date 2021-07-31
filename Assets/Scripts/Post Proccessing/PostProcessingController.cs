@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
 /// <summary>
-/// Класс для накладывания постэффектов
+/// РљР»Р°СЃСЃ РґР»СЏ РЅР°РєР»Р°РґС‹РІР°РЅРёСЏ РїРѕСЃС‚СЌС„С„РµРєС‚РѕРІ
 /// </summary>
 [RequireComponent(typeof(Volume))]
 public class PostProcessingController : MonoBehaviour

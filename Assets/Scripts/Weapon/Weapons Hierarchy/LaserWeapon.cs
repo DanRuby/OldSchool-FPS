@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Оружие стреляющее лазером в виде лайн рендерера
+/// РћСЂСѓР¶РёРµ СЃС‚СЂРµР»СЏСЋС‰РµРµ Р»Р°Р·РµСЂРѕРј РІ РІРёРґРµ Р»Р°Р№РЅ СЂРµРЅРґРµСЂРµСЂР°
 /// </summary>
 public class LaserWeapon : WeaponBase
 {

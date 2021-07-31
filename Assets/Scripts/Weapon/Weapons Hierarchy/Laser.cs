@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Класс лазера, которым стреляет LaserWeapon
+/// РљР»Р°СЃСЃ Р»Р°Р·РµСЂР°, РєРѕС‚РѕСЂС‹Рј СЃС‚СЂРµР»СЏРµС‚ LaserWeapon
 /// </summary>
 [RequireComponent(typeof(LineRenderer))]
 public class Laser : MonoBehaviour

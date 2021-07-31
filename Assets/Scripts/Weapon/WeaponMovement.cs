@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Добавление оружию небольших анимаций в зависимости от инпутов игрока
+/// Р”РѕР±Р°РІР»РµРЅРёРµ РѕСЂСѓР¶РёСЋ РЅРµР±РѕР»СЊС€РёС… Р°РЅРёРјР°С†РёР№ РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РёРЅРїСѓС‚РѕРІ РёРіСЂРѕРєР°
 /// </summary>
 public class WeaponMovement : MonoBehaviour
 {
-    [Tooltip("Трансформ оружия для анимации")]
+    [Tooltip("РўСЂР°РЅСЃС„РѕСЂРј РѕСЂСѓР¶РёСЏ РґР»СЏ Р°РЅРёРјР°С†РёРё")]
     [SerializeField]
     private Transform gun;
 
     [Space(4)]
-    [Header("Горизонтальное смещение")]
+    [Header("Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅРѕРµ СЃРјРµС‰РµРЅРёРµ")]
     [SerializeField]
     private float maxOffset;
 
@@ -20,7 +20,7 @@ public class WeaponMovement : MonoBehaviour
     private float speed;
 
     [Space(4)]
-    [Header("Вращения")]
+    [Header("Р’СЂР°С‰РµРЅРёСЏ")]
     [SerializeField]
     private float rotationSpeed;
 
@@ -58,7 +58,7 @@ public class WeaponMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Добавление ротации оружию в зависимости от движений мыши
+    /// Р”РѕР±Р°РІР»РµРЅРёРµ СЂРѕС‚Р°С†РёРё РѕСЂСѓР¶РёСЋ РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РґРІРёР¶РµРЅРёР№ РјС‹С€Рё
     /// </summary>
     private void HandleMouseInput()
     {
@@ -80,7 +80,7 @@ public class WeaponMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Добавление смещения оружию в зависимости от горизонтального инипута клавиатуры
+    /// Р”РѕР±Р°РІР»РµРЅРёРµ СЃРјРµС‰РµРЅРёСЏ РѕСЂСѓР¶РёСЋ РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅРѕРіРѕ РёРЅРёРїСѓС‚Р° РєР»Р°РІРёР°С‚СѓСЂС‹
     /// </summary>
     private void HandleKeyboardInput()
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Класс разрушаемого объекта
+/// РљР»Р°СЃСЃ СЂР°Р·СЂСѓС€Р°РµРјРѕРіРѕ РѕР±СЉРµРєС‚Р°
 /// </summary>
 public class Destructable : MonoBehaviour,IDamagable
 {

@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 
 /// <summary>
-/// Класс, выводящий информацию о уровне
+/// РљР»Р°СЃСЃ, РІС‹РІРѕРґСЏС‰РёР№ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СѓСЂРѕРІРЅРµ
 /// </summary>
 public class LevelInfo : MonoBehaviour
 {
